@@ -11,6 +11,7 @@ inherit core-image
 IMAGE_INSTALL_append ="\
 	openssh \
 	systemd-analyze \
+	networkmanager \
 "
 
 IMAGE_INSTALL += "packagegroup-core-x11-sato-games"
