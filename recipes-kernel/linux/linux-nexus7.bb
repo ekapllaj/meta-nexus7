@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 inherit kernel
 LINUX_VERSION ?= "3.1.10"
 
-LOCALVERSION = "nexus7-1.0.0"
+LOCALVERSION = "-10-nexus7"
 PR = "r0"
 
 SRCREV = "025be093d300a98b5f58cfd17cb3aaf22f1ac1b6"
