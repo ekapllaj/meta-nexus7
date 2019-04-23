@@ -12,6 +12,10 @@ IMAGE_INSTALL_append ="\
 	openssh \
 	systemd-analyze \
 	networkmanager \
+	chromium \
+	alsa-plugins \
+	alsa-lib \
+	alsa-utils \
 "
 
 IMAGE_INSTALL += "packagegroup-core-x11-sato-games"
