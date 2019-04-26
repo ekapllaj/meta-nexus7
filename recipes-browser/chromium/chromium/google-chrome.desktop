@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.0
+Name=Chromium
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
+GenericName=Web Browser
+Comment=Access the Internet
+Exec=/usr/bin/google-chrome --no-sandbox %U
+Terminal=false
+Icon=/usr/bin/chromium/product_logo_48.png
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;
+X-Ayatana-Desktop-Shortcuts=NewWindow;NewIncognito
+
+[NewWindow Shortcut Group]
+Name=New Window
+Exec=/usr/bin/google-chrome --no-sandbox
+TargetEnvironment=Unity
+
+[NewIncognito Shortcut Group]
+Name=New Incognito Window
+Exec=/usr/bin/google-chrome --incognito --no-sandbox
+TargetEnvironment=Unity
