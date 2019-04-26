@@ -12,6 +12,7 @@ IMAGE_INSTALL_append ="\
 	openssh \
 	systemd-analyze \
 	networkmanager \
+	network-manager-applet \
 	chromium \
 	alsa-plugins \
 	alsa-lib \
