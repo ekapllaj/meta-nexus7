@@ -23,4 +23,13 @@ IMAGE_INSTALL_append ="\
 	usbutils \
 "
 
+rootfs_postprocess_function() {
+	install -d ${IMAGE_ROOTFS}/etc/profile.d
+	cp ${IMAGE_ROOTFS}/etc/skel/.bashrc ${IMAGE_ROOTFS}/etc/profile.d/bashrc.sh
+	sed -i '/^#.*export/s/^#//' ${IMAGE_ROOTFS}/etc/profile.d/bashrc.sh
+	sed -i '/^#.*ls=/s/^#//' ${IMAGE_ROOTFS}/etc/profile.d/bashrc.sh
+	sed -i '/^#.*ll=/s/^#//' ${IMAGE_ROOTFS}/etc/profile.d/bashrc.sh
+}
+ROOTFS_POSTPROCESS_COMMAND += "rootfs_postprocess_function; "
+
 IMAGE_INSTALL += "packagegroup-core-x11-sato-games"
