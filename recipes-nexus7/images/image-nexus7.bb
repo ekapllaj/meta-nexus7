@@ -13,10 +13,14 @@ IMAGE_INSTALL_append ="\
 	systemd-analyze \
 	networkmanager \
 	network-manager-applet \
-	chromium \
 	alsa-plugins \
 	alsa-lib \
 	alsa-utils \
+	vim \
+	display-rotation \
+	tree \
+	ldd \
+	usbutils \
 "
 
 IMAGE_INSTALL += "packagegroup-core-x11-sato-games"
