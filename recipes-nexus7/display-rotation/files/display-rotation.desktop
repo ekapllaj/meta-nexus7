@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Rotate Display
+GenericName=Rotate Display
+Exec=/usr/local/sbin/display-rotation.sh
+#Icon=/usr/share/pixmaps/leafpad.png
+Icon=/usr/share/pixmaps/display-rotation-icon.png
+Type=Application
+Categories=Settings;
